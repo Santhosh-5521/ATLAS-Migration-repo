@@ -17,6 +17,8 @@ pd.options.mode.chained_assignment = None
 Sel_Col_List = ['Name','RecordTypeId','Address__c','Account__c','Address_Type__c','Contact__c','End_Date__c','Market_Account__c','Market__c','Start_Date__c']
 Sel_Col_Final_List = ['Id','Name','RecordTypeId','Address__c','Account__c','Address_Type__c','Contact__c','End_Date__c','Market_Account__c','Market__c','Start_Date__c']
 
+
+##### Function to establish connectivity to Supdev Salesforce
 def SF_connectivity_Supdev():
     session_id, instance = SalesforceLogin(username='sfdata_admins@condenast.com.supdev',
                                            password='sfDc1234', security_token='kvtGqGhKGlm0PNa8rkFkyaPX',
